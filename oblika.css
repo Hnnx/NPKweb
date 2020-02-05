@@ -1,0 +1,33 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 2rem;
+}
+
+li {
+    font-size: 5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#id_Link {
+    color: red;
+    font-family: 'Zhi Mang Xing', cursive;
+    list-style: none;
+}
+
+
+h2.barva{
+    color:green;
+}
+
+#naslov{
+    text-align:center;
+    text-decoration:underline;
+    color:#86d125;
+}
