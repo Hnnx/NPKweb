@@ -13,6 +13,7 @@ li {
     font-size: 5rem;
     margin-top: 15px;
     margin-bottom: 15px;
+    border: solid black 2px;
 }
 
 #id_Link {
@@ -21,8 +22,13 @@ li {
     list-style: none;
 }
 
+#tab{
+    display:block;
+    width:50%;
+}
 
-h2.barva{
+
+h2~.barva{
     color:green;
 }
 
@@ -30,4 +36,10 @@ h2.barva{
     text-align:center;
     text-decoration:underline;
     color:#86d125;
+}
+
+#polozaj{
+    position:fixed;
+    top:50px;
+    left:80px;
 }
