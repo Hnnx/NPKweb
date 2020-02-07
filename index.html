@@ -1,23 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="oblika.css"  rel="stylesheet" />
+    <link href="oblika.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
     <title>Novi Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+    </style>
 </head>
 <body>
     <h1 id="naslov">Naslov</h1>
     <h2 class="barva">podnaslov</h2>
 
     <p class="barva" id="polozaj">Odstavek<br /></p>
-    <br /><br /><br />
-    <!-- slika -->
     <div id="tab">
+        <p>Unorder list : &lt;ul &gt; tag</p>
         <ul>
             <li>Link: <a href="http://www.google.com"><img src="https://pbs.twimg.com/profile_images/1216813945408966663/vkVajfRz_400x400.jpg" width="50" /></a> </li>
             <li id="id_Link">Link 2: </li>
-            <li>MERDZIN</li>
+            <li>margins</li>
         </ul>
     </div>
+    <div>
+        <p>Unorder list : &lt;ol &gt; tag</p>
+        <ol type="T">
+            <li>stevilcni list</li>
+            <li>stevilcni list 2</li>
+            <li>stevilcni list 3</li>
+        </ol>
+    </div>
+    <div>
+        <table border="1">
+            <tr>
+                <th>Ime</th>
+                <th>Priimek</th>
+                <th>Starost</th>
+            </tr>
+            <tr>
+                <td>Janez</td>
+                <td><img src="picic.png" height="50" width="50" /></td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Boris</td>
+                <td>Desetak</td>
+                <td>33</td>
+            </tr>
+        </table><br />
+        <!--------------------------------------->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Ime</th>
+                    <th colspan="2">Telefon</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Janez Novak</td>
+                    <td>031234569</td>
+                    <td>040987152</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table border="1">
+            <tr>
+                <th>Ime</th>
+                <th>Naslov</th>
+            </tr>
+            <tr>
+                <td>Janez Novak</td>
+                <th rowspan="2">Ulica 15</th>
+            </tr>
+            <tr>
+                <td>Mojca Novak</td>
+            </tr>
+        </table>
+    </div>
+    <br />
+    <footer>
+        <a href="nevemse.html">Stran 2 >></a>
+    </footer>
+  
+
 </body>
 </html>
