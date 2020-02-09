@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js Trening</title>
+    <style>
+        body {
+            background-color: #f7c595;
+        }
+
+        .cen {
+            text-align: center;
+        }
+
+        #js {
+            font-family: Consolas,monaco,monospace;
+        }
+
+        #sred{
+            float:left;
+            background-color:antiquewhite;
+            border-radius:5px;
+            width: 450px;
+        }
+
+        #calc{
+            float:right;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="cen">JavaSchrkipt</h1>
+    <h4 class="cen">Shtrup Shtrup</h4>
+
+    <button type="button" onclick="narediNekaj()">
+        Klik
+    </button>
+    <div id="sred">
+        <p>Primer:</p>
+        <p id="js">
+            &lt;script&gt;<br />
+            var a = 5;<br />
+            var b = 6;<br />
+            var rezultat = a + b;<br />
+            console.log(rezultat);<br />
+            <br /><br />
+            function narediNekaj() {<br />
+            for (var i = 0; i < 20; i++) {<br />
+            <br /><br />
+            console.log("Gumb je bil kliknjen");<br />
+            &nbsp;&nbsp;}<br />
+            }<br />
+            var tabela = [1, 2, 3];<br />
+            var itterable = [1, 2, 3];<br />
+            <br /><br />
+            for (x in tabela) { }<br />
+            <br /><br />
+            for (y in itterable) { }<br />
+            if (a == c) {<br />
+            console.log("2 enacaja: enaka vrednost");<br />
+            }<br />
+            if (a == c) {<br />
+            console.log("3 enacaji: Tipa nista enaka");<br />
+            }<br />
+            &lt;script&gt;<br />
+        </p>
+    </div>
+    <div id="calc">
+
+        <p>Primer:</p>
+        <p>
+            <br />
+
+            &lt;input type="text" id="prvoStevilo" value="5" /&gt;<br />
+            &lt;input type="text" id="drugoStevilo" value="5" /&gt;<br />
+            <br /><br />
+
+            &lt;script&gt;<br />
+            <br />
+            function izracunaj() {<br />
+            var prvoStevilo = document.getElementById("prvoStevilo").value;<br />
+            var drugoStevilo = document.getElementById("drugoStevilo").value;<br />
+            <br />
+            var res = Number(prvoStevilo) + Number(drugoStevilo);<br />
+            <br />
+            console.log(res)<br />
+            }<br />
+            &lt;script/&gt;
+
+        </p>
+
+        <input type="text" id="prvoStevilo" value="5"/> + 
+        <input type="text" id="drugoStevilo" placeholder="5"/>
+
+        <button onclick="izracunaj()">Izracunaj</button>
+
+    </div>
+
+
+
+    <br />
+    <footer class="cen">
+        <a href="nevemse.html">Prejsnja stran</a> | <a href="#">Naslednja stran</a>
+    </footer>
+    <script>
+        var a = 5;
+        var b = 6;
+        var c = "5";
+        var rezultat = a + b;
+        console.log(rezultat);
+
+        function narediNekaj() {
+            for (var i = 0; i < 20; i++) {
+
+                console.log("Gumb je bil kliknjen");
+            }
+        }
+
+        var tabela = [1, 2, 3];
+        var itterable = [1, 2, 3];
+
+
+        for (x in tabela) { }
+
+        for (y in itterable) { }
+
+        if (a == c) {
+            console.log("2 enacaja: enaka vrednost");
+        }
+        if (a == c) {
+            console.log("3 enacaji: Tipa nista enaka");
+        }
+
+        function izracunaj() {
+            var prvoStevilo = document.getElementById("prvoStevilo").value;
+            var drugoStevilo = document.getElementById("drugoStevilo").value;
+
+            var res = Number(prvoStevilo) + Number(drugoStevilo);
+
+            console.log(res)
+        }
+
+
+    </script>
+</body>
+</html>
