@@ -18,17 +18,26 @@
 
         $(document).ready(function () {
             izpisi();
+
+            $("#mis-dogodek").mouseover(function () {
+                $("#drugiDiv").slideDown();         
+            })
+
+         
+            $("#mis-dogodek").mouseleave(function () {
+                $("#drugiDiv").slideUp();
+            })
+
         })
 
         function izpisi() {
             $("#mojDiv").text("Danes je lep dan");
         }
-
-
+        
     </script>
-
+    <br />
     <footer class="cen">
-        <a href="index7.html">Prejsnja stran</a> | <a href="index8.html">Naslednja stran</a>
+        <a href="index7.html">Prejsnja stran</a> | <a href="index9.html">Naslednja stran</a>
     </footer>
 
 </body>
