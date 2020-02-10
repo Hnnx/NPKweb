@@ -72,8 +72,7 @@
 
             &lt;input type="text" id="prvoStevilo" value="5" /&gt;<br />
             &lt;input type="text" id="drugoStevilo" value="5" /&gt;<br />
-            <br /><br />
-
+            <br />
             &lt;script&gt;<br />
             <br />
             function izracunaj() {<br />
@@ -83,15 +82,17 @@
             var res = Number(prvoStevilo) + Number(drugoStevilo);<br />
             <br />
             console.log(res)<br />
+            document.getElementById("rezultat").innerHTML = res;<br />
             }<br />
             &lt;script/&gt;
-
         </p>
 
-        <input type="text" id="prvoStevilo" value="5"/> + 
-        <input type="text" id="drugoStevilo" placeholder="5"/>
+        <input type="text" id="prvoStevilo" value="5" /> +
+        <input type="text" id="drugoStevilo" placeholder="5" />
 
         <button onclick="izracunaj()">Izracunaj</button>
+        <p>Izpis na stran:</p>
+        <p>Retultat: <span id="rezultat"></span> </p>
 
     </div>
 
@@ -99,7 +100,7 @@
 
     <br />
     <footer class="cen">
-        <a href="nevemse.html">Prejsnja stran</a> | <a href="#">Naslednja stran</a>
+        <a href="nevemse.html">Prejsnja stran</a> | <a href="index7.html">Naslednja stran</a>
     </footer>
     <script>
         var a = 5;
@@ -137,6 +138,8 @@
             var res = Number(prvoStevilo) + Number(drugoStevilo);
 
             console.log(res)
+
+            document.getElementById("rezultat").innerHTML = res;
         }
 
 
