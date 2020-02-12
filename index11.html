@@ -13,6 +13,10 @@
         <a href="index10.html">Prejsnja stran</a> | <a href="index12.html">Naslednja stran</a>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+
     <script type="text/javascript">
 
         $(document).ready(function () {
@@ -22,15 +26,18 @@
         })
 
         function najBoAjax() {
-
+            $.ajax({
+                type: "POST",
+                url: "http://vaje.pco.si/vaja.php",
+                data: "vnos=" + $("#vnos").val(),
+                success: function (odgovor) {
+                    console.log(odgovor)
+                }
+            })
         }
 
     </script>
 
-    <!-- import jQuery-->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-            crossorigin="anonymous"></script>
 
 </body>
 </html>
