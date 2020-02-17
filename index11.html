@@ -6,6 +6,9 @@
 <body>
 
     Vnos: <input type="text" name="vnos" value="" />
+    <input type="text" id="ime" /><br />
+    <input type="text" id="priimek" /><br />
+    <input type="date" id="datum-rojstva" /><br />
     <button type="button" id="btn">Klikni me</button>
 
 
@@ -29,7 +32,11 @@
             $.ajax({
                 type: "POST",
                 url: "http://vaje.pco.si/vaja.php",
-                data: "vnos=" + $("#vnos").val(),
+                data: "vnos=" + $("#vnos").val() +
+                      "&ime=" + $("#ime").val() +
+                      "&priimek=" + $("#priimek").val() +
+                    "&datumRojstva=" + $("#datum-rojstva").val(),
+                datatype: "json",
                 success: function (odgovor) {
                     console.log(odgovor)
                 }
