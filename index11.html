@@ -10,6 +10,9 @@
     <input type="text" id="priimek" /><br />
     <input type="date" id="datum-rojstva" /><br />
     <button type="button" id="btn">Klikni me</button>
+    <br />
+    <br />
+    <div id="besedilo"></div>
 
 
     <footer class="cen">
@@ -39,6 +42,8 @@
                 datatype: "json",
                 success: function (odgovor) {
                     console.log(odgovor)
+                    console.log(odgovor['ime'])
+                    $("#besedilo").append(odgovor['ime'] + " " + odgovor['priimek'])
                 }
             })
         }
